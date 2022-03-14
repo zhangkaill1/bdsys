@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #666;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    /* 文字抗锯齿渲染更清晰 */
+    -webkit-font-smoothing: antialiased; /* Chrome、Safari */
+    -moz-osx-font-smoothing: grayscale; /* Firefox*/
+    /* 禁用ios设备中的链接点击高亮效果 */
+    /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+em, i {
+    font-style: normal
+}
+
+a {
+    color: #666;
+    text-decoration:none;
+}
+
+ul {
+    list-style:none;
+}
+
+img {
+    /* 图片大小取决于容器 */
+    /* width: 100%;
+    height: 100%; */
+    /* 解决图片外面包含了链接会有边框的问题 */
+    border: 0;
+    /* 取消图片底侧有空白缝隙的问题 */
+    vertical-align: middle
+}
+
+button {
+    cursor: pointer;
+}
+
+input, select, textarea {
+    border: 0; 
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/* 隐藏显示 */
+.none {
+    display: none
+}
+
+/* 清除浮动1，解决margin-top塌陷 */
+.clearfix:before,.clearfix:after{
+    content:'';
+    display:table;    
+}
+.clearfix:after{
+    clear:both;
+}
+.clearfix{
+    zoom:1;
+}
+
+/* 清除浮动2 */
+/* .clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+} */
+
+/* 浮动 */
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+
+/* 超出两行文字显示... */
+.ellipsis-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
